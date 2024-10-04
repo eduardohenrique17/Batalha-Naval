@@ -1,0 +1,60 @@
+body {
+    background-image: url('navio.png'); /* Imagem de fundo */
+    background-size: cover;
+    opacity: 0.8; /* Transparência do fundo */
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.596);
+    height: 100px;
+}
+
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#game-board {
+    top: 50px;
+    position: relative;
+    left: 300px;
+    display: grid;
+    grid-template-columns: repeat(5, 80px); /* Matriz 5x5 */
+    gap: 5px;
+}
+
+.cell {
+    width: 80px; /* Tamanho da imagem */
+    height: 80px;
+    background-image: url('agua-clinica.jpg'); /* Imagem de fundo da agua*/
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.controls {
+    position: relative;
+    top: 30px;
+    left: 300px;
+    margin: 50px;
+}
+
+button {
+    margin: 10px;
+}
+
+.score {
+    position: relative;
+    left: 300px;
+    color: white;
+    display: none; /* Ocultar score até o primeiro tiro */
+}
